@@ -1,10 +1,12 @@
 import React from 'react';
-
+import '../webapp.css'
 
 const Home = () => {
   return(<>
     
-  <h1>Welcome to webpage</h1>
+  <div className='app-main'>
+
+  </div>
   
   
   </>);
