@@ -8,13 +8,28 @@ import Contactus from "./pages/Contactus";
 import Webapp from "./pages/Webapp";
 import logo from './logo.svg';
 import './App.css';
+import 'boxicons';
 
 function App() {
   return (
     <Router>
-    <nav>
-      <Link to="/">Home</Link> | <Link to="/about">About</Link> | <Link to="/login">Login</Link> | <Link to="/webapp">WebApp</Link>
+      <header className="homeheader">
+    <a href="#" className='logo'>Domos</a>
+
+
+
+    <nav className='navbar'>
+   
+      <Link to="/" className='active'>Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/webapp">WebApp</Link>
+     
+      
+      
     </nav>
+</header>
+      
+     
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />

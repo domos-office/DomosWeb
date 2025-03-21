@@ -4,46 +4,38 @@ import React from 'react';
 const Home = () => {
   return(<>
     
-  <h1>Welcome to Home Page</h1>
-  <div className='home-banner'>
-
-  </div>
-
-  <body>
-  <header className="homeheader">
-    <a href="#" className='logo'>Domos</a>
-
-
-
-    <nav className='navbar'>
-      <a href="#" className='active'>Home</a>
-      <a href="#">About</a>
-      <a href="#">Shop</a>
-      <a href="#">Products</a>
-      <a href="#">Contact us</a>
-      <a href="#">WebApp</a>
-      
-    </nav>
-</header>
 
 <section className='home'>
+  <div className='contant'>
+    <div className='contant-parts'>
 <div className='home-content'>
   <h1>Domos</h1>
   <h3>Your home,your Domos</h3>
-  <p>gtg</p>
+  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+    when an unknown printer took a galley of type and scrambled it to make a type 
+    specimen book.</p>
   <div className='btn-box'>
-    <a href='#'>Hire me</a>
-    <a href='#'>Let's talk</a>
-
-
-
-
+    <a href=''>Explore</a> 
+    <a href='https://domos.al' target='_blank'>WebApp</a> 
     
   </div>
 </div>
+
+
+<div className='home-sci'>
+  <a href='https://www.instagram.com/domos.al/?utm_source=ig_web_button_share_sheet' target='_blank'><i class='bx bxl-instagram'></i></a>
+  <a href='https://www.facebook.com/share/15zKg7Ugxb/'><i class='bx bxl-facebook' target='_blank'></i></a>
+  <a href='tel:+355692046728'><i class='bx bxl-whatsapp' ></i></a>
+</div>
+</div>
+</div>
+<div className='image'>
+    <img src='/smart.jpg'/>
+</div>
 </section>
-</body>
-  
+
+ 
   </>);
 };
 
