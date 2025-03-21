@@ -19,13 +19,9 @@ function App() {
 
 
     <nav className='navbar'>
-   
       <Link to="/" className='active'>Home</Link>
       <Link to="/about">About</Link>
       <Link to="/webapp">WebApp</Link>
-     
-      
-      
     </nav>
 </header>
       
