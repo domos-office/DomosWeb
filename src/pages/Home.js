@@ -10,14 +10,13 @@ const Home = () => {
     <div className='contant-parts'>
 <div className='home-content'>
   <h1>Domos</h1>
-  <h3>Your home,your Domos</h3>
-  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-    when an unknown printer took a galley of type and scrambled it to make a type 
-    specimen book.</p>
+  <h3>Smart Home</h3>
+    <p>Experience the future of home automation with our innovative Smart Home system.
+       Designed for efficiency, security, and convenience, our solution seamlessly 
+       connects and controls your devices, offering a smarter way to live. Stay tuned for more updates!</p>
   <div className='btn-box'>
     <a href=''>Explore</a> 
-    <a href='https://domos.al' target='_blank'>WebApp</a> 
+    <a href='/webapp' target='_blank'>WebApp</a> 
     
   </div>
 </div>
