@@ -1,40 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-
-/********** Home*************/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
-
-
 }
 
 body {
-  background: rgb(9,31,36);
-  background: linear-gradient(90deg, rgba(9,31,36,1) 0%, rgba(9,9,121,1) 64%);
-  color:#ededed ;
+  background: rgb(9, 31, 36);
+  background: linear-gradient(90deg, rgba(9, 31, 36, 1) 0%, rgba(9, 9, 121, 1) 64%);
+  color: #ededed;
 }
 
-nav{
+nav {
   z-index: 100;
 }
 
 .homeheader {
-    position: fixed;
-    top: 0;
-    left: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   padding: 20px 10%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-
-
 }
 
 .logo {
@@ -42,9 +34,7 @@ nav{
   color: #ededed;
   text-decoration: none;
   font-weight: 600;
-
 }
-  
 
 .navbar a {
   font-size: 18px;
@@ -53,7 +43,6 @@ nav{
   font-weight: 500;
   margin-left: 35px;
   transition: .3s;
-
 }
 
 .navbar a:hover,
@@ -61,52 +50,50 @@ nav{
   color: #00abf0;
 }
 
-.home{
+.home {
   height: 100vh;
   display: flex;
   align-items: center;
   width: 100%;
 }
 
-.home-content{
+.home-content {
   max-width: 600px;
 }
 
-.home-content h1{
+.home-content h1 {
   font-size: 56px;
   font-weight: 700;
   line-height: 1.2;
 }
 
-.home-content h3{
-  font-size: 32spx;
+.home-content h3 {
+  font-size: 32px;
   font-weight: 700;
   color: #00abf0;
-  
 }
 
-.home-content p{
+.home-content p {
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.home-content .btn-box{
+.home-content .btn-box {
   display: flex;
   justify-content: space-between;
   width: 345px;
   height: 50px;
-
 }
 
-.btn-box a{
+.btn-box a {
   position: relative;
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   height: 100%;
-  background:#00abf0;
+  background: #00abf0;
   border: 2px solid #00abf0;
   border-radius: 8px;
   font-size: 19px;
@@ -115,67 +102,46 @@ nav{
   font-weight: 600;
   letter-spacing: 1px;
   transition: .5s;
-
-
 }
 
-.btn-box a:hover{
-
+.btn-box a:hover {
   color: white;
-
 }
 
-
-
-.btn-box a:nth-child(2){
+.btn-box a:nth-child(2) {
   background: transparent;
-  color: white; 
-   
-
+  color: white;
 }
-
-
-
 
 .btn-box a:nth-child(2)::before {
-
   background: #00abf0;
 }
 
-.btn-box a::before{
+.btn-box a::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 0;
   height: 100%;
-  background: #081b29 ;
-
+  background: #081b29;
   z-index: -1;
-  transition: 0.5s; 
-  
+  transition: 0.5s;
 }
-
 
 .btn-box a:hover::before {
-
   width: 100%;
-
-
 }
 
-
-.home-sci{
+.home-sci {
   position: absolute;
   bottom: 40px;
   width: 170px;
   display: flex;
   justify-content: space-between;
-
-   
 }
 
-.home-sci a{
+.home-sci a {
   position: relative;
   display: inline-flex;
   justify-content: center;
@@ -183,31 +149,23 @@ nav{
   width: 40px;
   height: 40px;
   background: transparent;
-
   border-radius: 50%;
   font-size: 20px;
   color: white;
   text-decoration: none;
   z-index: 1;
   overflow: hidden;
-
-
 }
 
-
-
-.home-sci a:hover{
+.home-sci a:hover {
   border: 2px solid #00abf0;
 }
 
-.home-sci a:hover:before{
-
+.home-sci a:hover:before {
   width: 100%;
-
-
 }
 
-.contant{
+.contant {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -215,7 +173,7 @@ nav{
   align-items: center;
 }
 
-.image{
+.image {
   width: 50%;
   height: 100vh;
   display: flex;
@@ -223,81 +181,114 @@ nav{
   align-items: center;
 }
 
-.home-content{
+.home-content {
   width: 500px;
 }
 
-.image img{
- width: 80%;
- border-radius: 10px;
+.image img {
+  width: 80%;
+  border-radius: 10px;
 }
 
-@media (max-width: 768px){
-  .contant{
+.team-section {
+  text-align: center;
+  padding: 60px 10%;
+  background: rgba(9, 31, 36, 0.8);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.team-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team-section h2 {
+  font-size: 36px;
+  color: #00abf0;
+  margin-bottom: 20px;
+}
+
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  background: #081b29;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+}
+
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 3px solid #00abf0;
+}
+
+.team-card h3 {
+  color: #ededed;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.team-card p {
+  color: #00abf0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .contant {
     width: 100%;
     height: 100vh;
   }
 
-  .image{
+  .image {
     width: 100%;
     height: 40vh;
-   
   }
 
-  .home{
+  .home {
     height: 140vh;
     display: block;
-    background: linear-gradient(4deg, rgba(9,31,36,1) 0%, rgba(9,9,121,1) 100%);
+    background: linear-gradient(4deg, rgba(9, 31, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
   }
 
-  .homeheader{
+  .homeheader {
     width: 100%;
     background-color: #081b29;
   }
 
-  .logo{
+  .logo {
     display: none;
     width: 0;
   }
 
-  nav{
+  nav {
     width: 100%;
   }
-  .home-content{
-   width: 300px;
-   height: 50vh;
- 
+
+  .home-content {
+    width: 300px;
+    height: 50vh;
   }
 
-  .home-content .btn-box{
+  .home-content .btn-box {
     display: flex;
     justify-content: space-between;
     width: 300px;
-    height: 50px;
   
-  }
-
-  .btn-box a{
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 100%;
-    background:#00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
-    color: #081b29;
-    text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 1px;
-    transition: .5s;
-  
-  
-  }
-
-
-}
-
-/**********About************/
+  }}
