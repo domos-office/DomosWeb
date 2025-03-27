@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import "../App.css";
 
 const teamMembers = [
-  { name: "Endri Ndoja", role: "Lead Developer" },
-  { name: "Sidrit Mucaj", role: "UI/UX Designer" },
-  { name: "Hera Valikaj", role: "Project Manager" },
-  { name: "Ardita Hasmegaj", role: "Marketing Specialist" },
+  { name: "Endri Ndoja", role: "Lead Developer" , profile: "/smart.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+  { name: "Sidrit Mucaj", role: "UI/UX Designer", profile: "/smart.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+  { name: "Hera Valikaj", role: "Project Manager", profile: "/smart.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
+  { name: "Ardita Hasmegaj", role: "Marketing Specialist", profile: "/smart.jpg", description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."},
 ];
 
 const Home = () => {
@@ -51,7 +51,7 @@ const Home = () => {
             </a>
             <a href="https://www.facebook.com/share/15zKg7Ugxb/" target="_blank">
               <i className="bx bxl-facebook"></i>
-            </a>
+            </a>  
             <a href="tel:+355692046728">
               <i className="bx bxl-whatsapp"></i>
             </a>
@@ -68,8 +68,11 @@ const Home = () => {
         <div className="team-container">
           {teamMembers.map((member, index) => (
             <div key={index} className="team-card">
+              <img src={member.profile} />
               <h3>{member.name}</h3>
               <p>{member.role}</p>
+              <p className="description">{member.description}</p>
+              <a href="">Learn More</a>
             </div>
           ))}
         </div>
