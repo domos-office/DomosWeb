@@ -5,11 +5,11 @@
   font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: rgb(9, 31, 36);
-  background: linear-gradient(90deg, rgba(9, 31, 36, 1) 0%, rgba(9, 9, 121, 1) 64%);
+  background-color: #0f2f46;
   color: #ededed;
 }
 
@@ -28,7 +28,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  background-color: #0f2f46;
+  background-color: #04243b;
 }
 
 .logo {
@@ -190,12 +190,14 @@ nav {
 .image img {
   width: 80%;
   border-radius: 10px;
+  box-shadow: 0px 3px 3px 0px white;
 }
 
 .team-section {
   text-align: center;
   padding: 60px 10%;
-  background: rgba(9, 31, 36, 0.8);
+ 
+  background-color: #0f2f46;
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
@@ -226,7 +228,7 @@ nav {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  width: 250px;
+  width: 300px;
   box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
   transition: transform 0.3s ease;
 }
@@ -284,12 +286,31 @@ nav {
   .image {
     width: 100%;
     height: 40vh;
+    display: none;
+  }
+
+  .btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .5s;
   }
 
   .home {
-    height: 140vh;
+    height: 100vh;
     display: block;
-    background: linear-gradient(4deg, rgba(9, 31, 36, 1) 0%, rgba(9, 9, 121, 1) 100%);
+   
   }
 
   .homeheader {
@@ -317,3 +338,137 @@ nav {
     width: 300px;
   
   }}
+
+  .download-app{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .download-app img{
+    box-shadow: none;
+    width: 70%;
+   }
+
+  .download-app .image{
+   width: 50%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+
+  .download-app .text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .download-app .text .elements{
+    width: 80%;
+   }
+
+   .download-app .text .elements h1{
+    font-weight: 700;
+    font-size: 56px;
+   }
+
+   .download-app .text .elements h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: #00abf0;
+   }
+
+   
+
+   .download-app .text .elements p{
+    width: 80%;
+    margin-top: 30px;
+    font-size: 16px;
+   }
+
+   .download-app .text .elements a{
+    text-decoration: none;
+    color: white;
+    width: 30%;
+    margin-right: 30px;
+   }
+
+   .download-app .text .elements a p{ 
+    font-size: 30px;
+    font-weight: 700;
+
+   }
+
+   .download-app .text .elements a p:hover{ 
+    color: #00abf0;
+
+   }
+
+
+   .download-app .text .elements .download{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 50px;
+   }
+
+   
+   .download-app .text .elements img{
+      width: 100px;
+      
+   }
+
+   @media (max-width: 768px) {
+
+    .download-app{
+      display: inline;
+    }
+
+    .download-app .image{
+      width: 100%;
+    }
+
+    .download-app .text{
+      width: 100%;
+    }
+
+    .download-app .text .elements{
+      width: 100%;
+      padding: 20px;
+    }
+
+    .download-app .text .elements p{
+      width: 100%;
+      margin-top: 30px;
+      font-size: 16px;
+     }
+
+     .download-app .text .elements .download{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items:center;
+      margin-top: 50px;
+     
+     }
+
+     .download-app .text .elements a{
+      text-decoration: none;
+      color: white;
+      width: 30%;
+      margin-right: 40px;
+      margin-left: 40px;
+     }
+
+     .download-app .text .elements .download p{
+      font-size: 20px;
+     
+     }
+     
+   }

@@ -40,7 +40,7 @@ const Home = () => {
               connects and controls your devices, offering a smarter way to live. Stay tuned for more updates!
             </p>
             <div className="btn-box">
-              <a href="">Explore</a>
+              <a href="#download-app">Explore</a>
               <a href="/webapp" target="_blank">WebApp</a>
             </div>
           </div>
@@ -63,6 +63,30 @@ const Home = () => {
         </div>
       </section>
 
+      <div className="download-app" id="download-app">
+          <div className="image">
+              <img src="/phone.png" />
+          </div>
+          <div className="text">
+            <div className="elements">
+                <h1>Download the App</h1>
+                <h3>Domos App - Coming soon</h3>
+                <p>Our app is available for free on both the Play Store and the App Store, compatible with Android and iOS devices. With just a simple download, you can start controlling your home directly from your smartphone. Whether you're at home or on the go, managing your space has never been easier. Download the app today and experience the convenience of smart home control at your fingertips.</p>
+                <div className="download">
+                <a href="" className="playstore">
+                  <img src="/playstore.png" /> 
+                  <p>Play Store</p>
+                  </a>
+                <a href="" className="appstore">
+                  <img src="/appstore.png" />
+                  <p>App Store</p>
+                </a>
+                </div>
+                
+            </div>
+          </div>
+      </div>
+
       <section id="team-section" className={`team-section ${isVisible ? "show" : ""}`}>
         <h2>Meet Our Team</h2>
         <div className="team-container">
@@ -77,6 +101,8 @@ const Home = () => {
           ))}
         </div>
       </section>
+
+      
     </>
   );
 };
