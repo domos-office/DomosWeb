@@ -196,7 +196,7 @@ nav {
 .team-section {
   text-align: center;
   padding: 60px 10%;
- 
+  
   background-color: #0f2f46;
   opacity: 0;
   transform: translateY(50px);
@@ -210,7 +210,7 @@ nav {
 }
 
 .team-section h2 {
-  font-size: 36px;
+  font-size: 56px;
   color: white;
   font-weight: 600;
   margin-bottom: 40px;
@@ -219,8 +219,10 @@ nav {
 .team-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 70px
 }
 
 .team-card {
@@ -228,7 +230,7 @@ nav {
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  width: 300px;
+  width: 280px;
   box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
   transition: transform 0.3s ease;
 }
@@ -471,4 +473,333 @@ nav {
      
      }
      
+   }
+
+   .job{
+    width: 100%;
+    height: 100vh;
+    padding-top: 10vh;
+   }
+
+   .job h1{
+    font-size: 56px;
+    font-weight: 600;
+    text-align: center;
+   }
+
+   .job .header{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .job .header .text{
+    width: 40%;
+   }
+
+   .job .search{
+    width: 100%;
+    height: 70vh;
+   
+   }
+
+   .search-container {
+    background: #081b29;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
+  }
+
+  .search-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-weight: 900;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00abf0;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+
+  .search-button:hover {
+    font-weight: 400;
+  }
+
+  .job .positionen{
+    width: 100%;
+    text-align: center;
+  }
+
+  .job .positionen .jobs{
+   width: 100%;
+   height: 100%;
+    
+  }
+
+.job .card{
+  width: 80%;
+  height: 20vh;
+  background: #081b29;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 10%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
+}
+
+.job .card .titel{
+ width: 20%;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+.job .card .titel h1{
+ font-size: 30px;
+ font-weight: 500;
+ }
+
+ .job .card .info{
+  width: 80%;
+  height: 100%;
+
+ }
+ 
+ .job .card .info .nav{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+  margin-left: 5%;
+
+ }
+
+ .job .card .info .nav p{
+  padding: 7px;
+  background-color: #00acf078;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-radius: 9px;
+ }
+
+ .job .card .info .nav2{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 13vh;
+  
+ }
+ 
+ .job .card .info .nav2 a {
+ padding: 8px;
+ background-color: green;
+ color: white;
+text-decoration: none;
+border-radius: 9px;
+width: 500px;
+ }
+
+ .job .card .info .nav2 a:hover {
+ 
+ 
+ font-weight: 700;
+  }
+
+
+  @media (max-width: 768px) {
+    
+    .job .header{
+     margin-top: 70px;
+     }
+
+    .job .header .text{
+      width: 80%;
+     }
+
+    .job .card{
+      width: 80%;
+      height: 45vh;
+      margin-bottom: 30px;
+      margin-top: 30px;
+      margin-left: 0%;
+      border-radius: 12px;
+      display: inline-block;
+      
+    }
+
+    .job .card .titel{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10vh;
+
+     }
+
+     .job .card .info{
+      width: 80%;
+      height: 100%;
+    
+     }
+     
+     .job .card .info .nav{
+      width: 100%;
+      display: inline-block;
+      height: 20vh;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.425);
+      margin-left: 12%;
+     }
+    
+     .job .card .info .nav p{
+      padding: 5px;
+      background-color: #00acf078;
+      margin-left: 20px;
+      margin-right: 20px;
+      border-radius: 9px;
+      margin: 10px;
+     }
+    
+     .job .card .info .nav2{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 13vh;
+      margin-left: 12%;
+     }
+
+  }
+
+  .mostwanted{
+    width: 100%;
+    height: 100vh;
+    
+
+  }  
+    .mostwanted .text{
+      width: 100%;
+      height: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    
+    .mostwanted .options{
+      width: 100%;
+      height: 80%;  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+  .mostwanted .card-job{
+    width: 300px;
+    height: 500px;
+    background: #081b29;
+    margin: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);  
+  }
+
+  .mostwanted .card-job .image{
+    width: 100%;
+    height: 200px;
+    
+  }
+
+  .mostwanted .card-job .image img{
+    width: 100%;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 12px 12px 0px 0px;
+    
+  }
+
+  .mostwanted .card-job .description{
+  width: 100%;
+  height: 200px;
+  }
+
+
+  .mostwanted .card-job .description h1{
+    font-size: 25px;
+    margin-top: 10px;
+    color: white;
+  }
+
+  .mostwanted .card-job .description h3{
+    font-size: 15px;
+    margin-left: 10px;
+    color: #00abf0;
+    font-weight: 600;
+  }
+
+  .mostwanted .card-job .description p{
+    margin: 10px;
+    color: white;
+  }
+
+  .mostwanted .card-job  .button a{
+   padding: 10px;
+    background-color: #00abf0;
+    text-decoration: none;
+    border-radius: 9px;
+  }
+
+  .mostwanted .card-job  .button a:hover{
+    font-weight: 600;
+   }
+
+  .mostwanted .card-job  .button{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   @media (max-width: 768px) {
+    .mostwanted .card-job .image{
+      display: inline-block;
+    }
    }
