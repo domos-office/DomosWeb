@@ -87,6 +87,69 @@ const Home = () => {
           </div>
       </div>
 
+      
+
+      <div className="more">
+        <div className="one">
+          <div className="image">
+            <div className="description">
+              <h1>The future of your Home</h1>
+            <img src="/smart.jpg" />
+            </div>
+           
+          </div>
+          <div className="white">
+
+          </div>
+
+          
+        </div>
+
+        <div className="one">
+          <div className="image2">
+            <div className="description">
+              <h1>The future of your Home</h1>
+            <img src="/smart.jpg" />
+            </div>
+           
+          </div>
+          <div className="white">
+          <div className="image">
+            <div className="description">
+              <h1>The future of your Home</h1>
+            <img src="/smart.jpg" />
+            </div>
+           
+          </div>
+          </div>
+
+          
+        </div>
+
+<div className="one2">
+        <div className="one">
+          <div className="image2">
+            <div className="description">
+              <h1>The future of your Home</h1>
+            <img src="/smart.jpg" />
+            </div>
+           
+          </div>
+          <div className="white">
+          <div className="image">
+            <div className="description">
+              <h1>The future of your Home</h1>
+            <img src="/smart.jpg" />
+            </div>
+           
+          </div>
+          </div>
+
+          
+        </div>
+        </div>
+      </div>
+
       <section id="team-section" className={`team-section ${isVisible ? "show" : ""}`}>
         <h2>Meet Our Team</h2>
         <div className="team-container">
@@ -95,12 +158,17 @@ const Home = () => {
               <img src={member.profile} />
               <h3>{member.name}</h3>
               <p>{member.role}</p>
-              <p className="description">{member.description}</p>
+              
               <a href="">Learn More</a>
             </div>
           ))}
         </div>
       </section>
+
+      <div className="contact-info">
+
+      </div>
+
 
 
       

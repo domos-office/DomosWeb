@@ -227,6 +227,7 @@ nav {
 
 .team-card {
   background: #081b29;
+
   border-radius: 12px;
   padding: 20px;
   text-align: center;
@@ -256,6 +257,7 @@ nav {
 .team-card p {
   color: #00abf0;
   font-size: 16px;
+  margin-bottom: 40px;
 }
 
 .team-card .description{
@@ -273,6 +275,7 @@ nav {
   padding: 10px;
   background-color: #00abf0;
   border-radius: 9px;
+
 }
 
 .team-card a:hover{
@@ -802,4 +805,73 @@ width: 500px;
     .mostwanted .card-job .image{
       display: inline-block;
     }
+   }
+
+   .more{
+    width: 100%;
+    height: 250vh;
+    background-color: white;
+   }
+
+   .more .one{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .more .one .image{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   }
+
+   .more .one .image img{
+    width: 500px;
+   }
+
+   .more .one .image h1{
+    color: black;
+    font-weight: 400;
+    padding-bottom: 30px; 
+   }
+
+   .more .one .white{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .more .one .image2{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 280px;
+   }
+
+   .more .one .image2 img{
+    width: 500px;
+   }
+
+   .more .one .image2 h1{
+    color: black;
+    font-weight: 400;
+    padding-bottom: 30px; 
+   }
+
+   .more .one2{
+    margin-top: 150px;
+   }
+
+   .contact-info{
+    width: 100%;
+    height: 40vh;
+  background-color: white;
    }
