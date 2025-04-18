@@ -937,3 +937,19 @@ width: 500px;
   }
   
   
+  @media (max-width: 768px) {
+    .about-section{
+      display: inline-block;
+      width: 100%;
+    }
+
+    .about-text{
+      padding-top: 30px;
+
+    }
+
+    .about-image{
+      align-items: center;
+      height: 50vh;
+    }
+  }
