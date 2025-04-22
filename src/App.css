@@ -222,16 +222,15 @@ nav {
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin-top: 70px
+  margin-top: 70px;
 }
 
 .team-card {
   background: #081b29;
-
   border-radius: 12px;
   padding: 20px;
   text-align: center;
-  width: 280px;
+  width: 220px; /* Reduced width for smaller cards */
   box-shadow: 0px 5px 15px rgba(0, 171, 240, 0.3);
   transition: transform 0.3s ease;
 }
@@ -241,8 +240,8 @@ nav {
 }
 
 .team-card img {
-  width: 100px;
-  height: 100px;
+  width: 80px;  /* Adjusted image size */
+  height: 80px; /* Adjusted image size */
   border-radius: 50%;
   margin-bottom: 10px;
   border: 3px solid #00abf0;
@@ -250,35 +249,34 @@ nav {
 
 .team-card h3 {
   color: #ededed;
-  font-size: 20px;
+  font-size: 18px; /* Smaller font size */
   margin-bottom: 5px;
 }
 
 .team-card p {
   color: #00abf0;
-  font-size: 16px;
+  font-size: 14px; /* Smaller font size */
   margin-bottom: 40px;
 }
 
-.team-card .description{
+.team-card .description {
   color: white;
-  font-size: 13px;
+  font-size: 12px; /* Smaller font size */
   text-align: left;
   margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.team-card a{
+.team-card a {
   text-decoration: none;
   color: black;
   font-weight: 300;
   padding: 10px;
   background-color: #00abf0;
   border-radius: 9px;
-
 }
 
-.team-card a:hover{
+.team-card a:hover {
   color: white;
 }
 
@@ -869,87 +867,55 @@ width: 500px;
    .more .one2{
     margin-top: 150px;
    }
-
-   .contact-info{
+   
+   .contact-info {
     width: 100%;
     height: 40vh;
-  background-color: white;
-   }
-
-
-   .about-section {
+    background-color: black; /* Black background */
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 80px;
-    background-color: #f8f9fa; 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    color: white; /* White text for contrast */
+    font-family: "Nunito", sans-serif; /* Font family */
+    font-optical-sizing: auto; /* Automatic optical sizing */
   }
   
-  .about-text {
-    flex: 1;
-    padding-right: 40px;
+  .contact-info h2 {
+    font-size: 40px;
+    font-weight: 600; /* Slightly less bold than 800/700 */
+    font-family: "Nunito", sans-serif;
+    text-align: center;
+    margin-bottom: 0;
   }
   
-  .about-text h1 {
-    
-    margin-bottom: 20px;
-    font-size: 56px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #04243b;
-  }
-  
-  .about-text p {
-    font-size: 1.25rem;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .about-image {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .about-image img {
-    width: 90%;
-    border-radius: 20px; 
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  }
-
-  .learn-more-button {
-    margin-top: 20px;
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
+  .discover-more-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin: 20px auto 0 auto;
+    padding: 6px 14px; /* Small, tight padding */
+    font-size: 0.95rem; /* Small readable font */
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
     color: white;
-    background-color: #04243b;
-    border: none;
-    border-radius: 12px;
+    background-color: #007bff;
+    border: 2px solid #007bff;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    text-transform: none;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   }
   
-  .learn-more-button:hover {
-    background-color: #063b5b;
+  .text-container {
+    text-align: center; /* Center the button's parent */
+  }
+  
+  .discover-more-btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   }
   
   
-  @media (max-width: 768px) {
-    .about-section{
-      display: inline-block;
-      width: 100%;
-    }
-
-    .about-text{
-      padding-top: 30px;
-
-    }
-
-    .about-image{
-      align-items: center;
-      height: 50vh;
-    }
-  }
