@@ -29,10 +29,14 @@ const Home = () => {
 
   return (
     <>
+   
+
+
       <section className="home">
+        
         <div className="contant">
           <div className="home-content">
-            <h1>Domos</h1>
+            <h1>Fradomos</h1>
             <h3>Smart Home</h3>
             <p>
               Experience the future of home automation with our innovative Smart Home system.
@@ -70,7 +74,7 @@ const Home = () => {
           <div className="text">
             <div className="elements">
                 <h1>Download the App</h1>
-                <h3>Domos App - Coming soon</h3>
+                <h3>Fradomos App - Coming soon</h3>
                 <p>Our app is available for free on both the Play Store and the App Store, compatible with Android and iOS devices. With just a simple download, you can start controlling your home directly from your smartphone. Whether you're at home or on the go, managing your space has never been easier. Download the app today and experience the convenience of smart home control at your fingertips.</p>
                 <div className="download">
                 <a href="" className="playstore">

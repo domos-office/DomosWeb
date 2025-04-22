@@ -14,7 +14,7 @@ function App() {
   return (
     <Router>
       <header className="homeheader">
-    <a href="/" className='logo'>Domos</a>
+    <a href="/" className='logo'>Fradomos</a>
 
 
 

@@ -2,13 +2,15 @@ import React from 'react';
 import '../App.css';
 import aboutImage from '../assets/about-illustration.jpg';
 
+
+
 const About = () => {
   return (
     <div className="about-section">
       <div className="about-text">
         <h1>About us</h1>
         <p>
-          At Domos, our mission is to redefine modern living through intelligent,
+          At Fradomos, our mission is to redefine modern living through intelligent,
           connected home experiences. We aim to empower users with technology that’s
           simple, secure, and seamlessly integrated into everyday life.
         </p>
@@ -18,6 +20,8 @@ const About = () => {
         <img src={aboutImage} alt="Smart home illustration" />
       </div>
     </div>
+  
+    
   );
   
 };
